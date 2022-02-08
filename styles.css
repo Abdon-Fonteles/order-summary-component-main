@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+:root {
+    --Pale-blue: hsl(225, 100%, 94%);
+    --Bright-blue: hsl(245, 75%, 52%);
+    --Very-pale-blue: hsl(225, 100%, 98%);
+    --Desaturated-blue: hsl(224, 23%, 55%);
+    --Dark-blue: hsl(223, 47%, 23%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Red Hat Display', sans-serif;
+    background: url(images/pattern-background-desktop.svg) no-repeat;
+    background-size: 100%;
+    background-color: var(--Pale-blue);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-size: 16px;
+}
+
+.container {
+    text-align: center;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.wrapper {
+    background-color: #FFF;
+    margin: 2rem 1rem;
+    width: 100%;
+    border-radius: 15px;
+    box-shadow: 0px 14px 10px -6px rgb(148, 148, 148);
+}
+
+.image-top img {
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    width: 100%;
+}
+
+.box-text {
+    padding: 35px;
+}
+
+.box-text h2 {
+    font-weight: 900;
+    color: var(--Dark-blue);
+    margin-bottom: 5%;
+}
+
+.box-text p {
+    color: var(--Desaturated-blue);
+}
+
+.flex {
+    background-color: var(--Very-pale-blue);
+    margin: 0 25px;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.plan {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+}
+
+.plan img {
+    display: block;
+}
+
+.plan li {
+    display: block;
+    text-decoration: none;
+    padding-left: 15px;
+    color: var(--Desaturated-blue);
+}
+
+.plan p {
+    font-weight: 900;
+    color: var(--Dark-blue);
+}
+
+.change a {
+    margin: 0 25px;
+    color: var(--Bright-blue);
+}
+
+.change a:hover {
+    color :hsl(245, 75%, 52%, 0.6);
+    text-decoration: none;
+}
+
+.payment a {
+    box-shadow: 0px 5px 10px -4px rgba(117,117,117,1);
+    display: block;
+    background: var(--Bright-blue);
+    margin: 20px 25px 20px 25px;
+    padding: 15px;
+    border-radius: 15px;
+    color: #FFF;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.payment a:hover {
+    background: hsl(245, 75%, 52%, 0.6);
+}
+
+.cancel a {
+    display: block;
+    padding-bottom: 40px;
+    color: var(--Desaturated-blue);
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.cancel a:hover {
+    color: var(--Dark-blue);
+}
